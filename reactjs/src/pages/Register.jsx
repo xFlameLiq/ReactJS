@@ -46,17 +46,26 @@ export default function Register() {
   return (
     <div className="container">
       <form id="form" onSubmit={registerUser}>
-        <h1>Register</h1>
-        <input type="text" name="" id="" value={name} onChange={handleName} />
-        <input type="text" name="" id="" value={lastname} onChange={handleLastname} />
-        <input type="text" name="" id="" />
-        <input type="text" name="" id="" />
-        <input type="submit" value="Register" />
+        <h1>Crear una cuenta</h1>
+        <label>Nombre:</label>
+        <input type="text" required name="" id="" value={name} onChange={handleName} />
+        <label>Apellido:</label>
+        <input type="text" required lastName="" id="" value={lastname} onChange={handleLastname} />
+        <label>Correo:</label>
+        <input type="text" required email="" id="" />
+        <label>Contraseña:</label>
+        <input type="text" required password="" id="" />
+        <label>Sexo:</label>
+        <input type="text" required sex="" id="" />
+        <label>Teléfono:</label>
+        <input type="text" required phone="" id="" />
+        <input type="submit" value="Registrarme"  />
         <div>
-          <Link to='/login'>Login</Link>
+          <Link to='/login'>¿Ya tienes una cuenta? Login</Link>
           {/* <Link to='/'>Home</Link> */}
         </div>
       </form>
+      <img src="./image/users.png"/>
     </div>
   );
 }
