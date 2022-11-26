@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import './Register.css';
 
-export default function Register() {
+export default function Registrarme() {
 
   const [name, setName] = useState('');
   const [lastname, setLastname] = useState('');
@@ -42,6 +42,22 @@ export default function Register() {
   function handleLastname(evt) {
     setLastname(evt.target.value);
   }
+  
+  function handleEmail(evt) {
+    setEmail(evt.target.value);
+  }
+  
+  function handlePassword(evt) {
+    setPassword(evt.target.value);
+  }
+  
+  function handleSex(evt) {
+    setSex(evt.target.value);
+  }
+
+  function handlePhone(evt) {
+    setPhone(evt.target.value);
+  }
 
   return (
     <div className="container">
@@ -50,15 +66,15 @@ export default function Register() {
         <label>Nombre:</label>
         <input type="text" required name="" id="" value={name} onChange={handleName} />
         <label>Apellido:</label>
-        <input type="text" required lastName="" id="" value={lastname} onChange={handleLastname} />
+        <input type="text" required lastname="" id="" value={lastname} onChange={handleLastname} />
         <label>Correo:</label>
-        <input type="text" required email="" id="" />
+        <input type="text" required email="" id="" value={email} onChange={handleEmail}/>
         <label>Contraseña:</label>
-        <input type="text" required password="" id="" />
+        <input type="text" required password="" id=""value={password} onChange={handlePassword} />
         <label>Sexo:</label>
-        <input type="text" required sex="" id="" />
+        <input type="text" required sex="" id="" value={sex} onChange={handleSex}/>
         <label>Teléfono:</label>
-        <input type="text" required phone="" id="" />
+        <input type="text" required phone="" id="" value={phone} onChange={handlePhone}/>
         <input type="submit" value="Registrarme"  />
         <div>
           <Link to='/login'>¿Ya tienes una cuenta? Login</Link>
