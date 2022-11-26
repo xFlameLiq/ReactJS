@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const cors = require('cors');
 const connection = require('./db');
 
 
@@ -8,6 +9,7 @@ const app = express();
 
 app.use(morgan('dev'));
 app.use(express.json());
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.json({ message: 'Hello World' });
