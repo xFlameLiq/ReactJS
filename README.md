@@ -1,15 +1,15 @@
 # ReactJS
 
 ## Clonar el respositorio  
-`$ git clone https://github.com/xFlameLiq/ReactJS.git`
+`$ git clone https://github.com/xFlameLiq/ReactJS.git`  
 `$ cd ReactJS/`
 
 ## Frontend
-`$ cd reactjs/`
-`$ npm install`
-`$ npm run dev`
+`$ cd reactjs/`  
+`$ npm install`  
+`$ npm run dev`  
 
 ## Backend
-`$ cd backend/`
-`$ npm install`
-`$ npm run start`
+`$ cd backend/`  
+`$ npm install`  
+`$ npm run start`  
