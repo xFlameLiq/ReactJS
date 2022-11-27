@@ -2,10 +2,21 @@ body{
     background-color: #77a2a4;
   }
   
-h1 {
+.title {
+  font-size: 25px;
     text-align: center;
-    margin: 1.2em 1em;
+    margin: 0px auto 20px;
   }
+
+.sesion-img {
+    width: 200px;
+    height: 200px;
+    margin: 0px auto 20px;
+    border-radius: 50%;
+    background-image: url(../../image/LogoUsuario.jpg);
+    background-size: cover;
+}
+
 .container-main {
     width: 500px;
 
@@ -16,34 +27,40 @@ h1 {
     background-color: #a6a6a6;
   }
 
+
 .container-main .form {
-    text-align: center;
     border: 1px solid #ccc;
     border-radius: 14px;
-    padding: 0 0 20px;
+    padding: 20px;
   }
 .container-main .form label {
-    display: flex;
+    padding: 10px 10px;
+    display: inline-block;
     justify-self: left;
     color: black;
-    font-weight: bold;
-    margin-left: 2em;
-    
-    
+    font-weight: bold;    
+    margin: 0px 3rem 0px 2rem;
   }
+
+.container-main .form .data {
+  display: flex;
+  margin-bottom: 20px;
+}
+
 .container-main .form .input {
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: 1px solid #ccc;
     border-radius: 7px;
     width: 45%;
-    margin-bottom: 20px;
   }
 .container-main .form .input[type='submit'] {
+  display: block;
     background-color: #B56FED;
     color: white;
     font-weight: bold;
     cursor: pointer;
-    width: 60%;
+    width: 200px;
+    margin: 0px auto 20px;
   }
 .container-main .form .input[type='submit']:hover {
     outline: 1px solid #B56FED;
@@ -52,7 +69,11 @@ h1 {
 
   }
 .a {
+  text-align: center;
+  width: 20rem;
+    display: block;
     text-decoration: none;
     color: rgb(33, 90, 165);
     font-size: small;
+    margin: 0px auto 0px;
   }
