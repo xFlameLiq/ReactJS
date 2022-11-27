@@ -1,30 +1,57 @@
+body{
+  background-color: #77a2a4;
+}
+
+h1 {
+  text-align: center;
+  margin: 1.2em 1em;
+}
+
 .container {
-  width: 500px;
+  width: 900px;
   font-family: sans-serif;
   margin: 50px auto;
+}
+
+form {
+  background-color: #a6a6a6;
 }
 
 .container form {
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 14px;
-  padding: 0 0 20px;
+  padding: 0 400px 20px 0;
+}
+
+.container form label {
+  display: flex;
+  justify-self: left;
+  color: black;
+  font-weight: bold;
+  margin-left: 2em;
+  transform: translateX(10%) translateY(80%);
 }
 
 .container form input {
   padding: 10px 20px;
   border: 1px solid #ccc;
   border-radius: 7px;
-  width: 80%;
-  margin-bottom: 20px;
+  width: 40%;
+}
+
+.container form input[type='text'] {
+  transform: translateX(30%) translateY(-40%);
 }
 
 .container form input[type='submit'] {
-  background-color: #4caf50;
+  background-color: #B56FED;
   color: white;
   font-weight: bold;
   cursor: pointer;
-  width: 90%;
+  width: 60%;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 .container form div {
@@ -36,4 +63,9 @@ a {
   text-decoration: none;
   color: rgb(33, 90, 165);
   font-size: small;
+}
+
+img {
+  transform: translateX(88%) translateY(-150%);
+  width: 500px;
 }
