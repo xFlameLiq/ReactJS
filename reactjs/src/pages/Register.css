@@ -1,10 +1,11 @@
 body{
-  background-color: #77a2a4;
+  background: linear-gradient(90deg ,  #79dadf , #266d70 , #79dadf);
 }
 
 h1 {
   text-align: center;
-  margin: 1.2em 1em;
+  margin: 1em 1em;
+  font-size: 25px;
 }
 
 .container {
@@ -14,7 +15,7 @@ h1 {
 }
 
 form {
-  background-color: #a6a6a6;
+  background: linear-gradient(90deg , #d9dbdb, #9fbbbe, #6b767a );
 }
 
 .container form {
@@ -45,13 +46,20 @@ form {
 }
 
 .container form input[type='submit'] {
-  background-color: #B56FED;
+  background-color: #373fad;
   color: white;
   font-weight: bold;
   cursor: pointer;
   width: 60%;
   margin-top: 40px;
   margin-bottom: 10px;
+}
+
+.container form input[type='submit']:hover {
+  outline: 1px solid #505594;
+  background-color: #505594;
+  color: #000000;
+
 }
 
 .container form div {
@@ -61,7 +69,7 @@ form {
 
 a {
   text-decoration: none;
-  color: rgb(33, 90, 165);
+  color: rgb(14, 63, 128);
   font-size: small;
 }
 
