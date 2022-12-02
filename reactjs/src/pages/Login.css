@@ -1,5 +1,5 @@
 body{
-    background-color: #77a2a4;
+    background: linear-gradient(90deg ,  #79dadf , #266d70 , #79dadf);
   }
   
 .title {
@@ -9,27 +9,33 @@ body{
   }
 
 .sesion-img {
-    width: 200px;
-    height: 200px;
-    margin: 0px auto 20px;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    margin: 0px auto -30px;
     border-radius: 50%;
-    background-image: url(../../image/LogoUsuario.jpg);
+    background-image: url(../../image/usuerlogin.png);
     background-size: cover;
+    top: -60px;
 }
 
 .container-main {
-    width: 500px;
+    width: 600px;
 
     font-family: sans-serif;
     margin: 50px auto;
   }
 .form {
-    background-color: #a6a6a6;
+    background-color: #b3b0b0;
+    background: linear-gradient(90deg , #d9dbdb, #9fbbbe, #6b767a );
   }
 
 
 .container-main .form {
-    border: 1px solid #ccc;
+    border: 1px solid rgb(185, 180, 180);
     border-radius: 14px;
     padding: 20px;
   }
@@ -38,42 +44,45 @@ body{
     display: inline-block;
     justify-self: left;
     color: black;
-    font-weight: bold;    
-    margin: 0px 3rem 0px 2rem;
+    font-weight: bold;
+    width: 6rem;
+    margin-left: 0.7rem;    
   }
 
 .container-main .form .data {
   display: flex;
   margin-bottom: 20px;
+  width: 500px;
 }
 
 .container-main .form .input {
     padding: 10px 10px;
     border: 1px solid #ccc;
     border-radius: 7px;
-    width: 45%;
+    width: 80%;
   }
 .container-main .form .input[type='submit'] {
-  display: block;
-    background-color: #B56FED;
+   display: block;
+    background-color: #373fad;
     color: white;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight:bolder;
     cursor: pointer;
     width: 200px;
     margin: 0px auto 20px;
   }
 .container-main .form .input[type='submit']:hover {
-    outline: 1px solid #B56FED;
-    background-color: #fff;
-    color: #B56FED;
+    outline: 1px solid #505594;
+    background-color: #505594;
+    color: #000000;
 
   }
 .a {
   text-align: center;
-  width: 20rem;
+  width: 30rem;
     display: block;
     text-decoration: none;
-    color: rgb(33, 90, 165);
+    color: rgb(14, 63, 128);
     font-size: small;
     margin: 0px auto 0px;
   }

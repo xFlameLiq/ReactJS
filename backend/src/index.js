@@ -25,7 +25,13 @@ app.post('/login', (req, res) => {
     if(err) {
       res.json({ err }); 
     } else {
-      res.json({ result});
+      if(result.length > 0) {
+        res.json({result});
+      } else {
+        res.json({result});
+        res.json(console.log("Usuario no encontrado"));
+      }
+      
     }
   });
 })
